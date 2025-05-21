@@ -8,6 +8,7 @@
 # bluiri (blurry) &nbsp; [![bluebuild build badge](https://github.com/visnudeva/blupr/actions/workflows/build.yml/badge.svg)](https://github.com/visnudeva/blupr/actions/workflows/build.yml)
 
 AT THE MOMENT I CAN'T FIGURE A WAY TO GET THE CONFIG FILES COPIED TO THE INSTALLATION SO I AM USING MY DOTFILES INSTEAD
+i'm just going to make an install script...
 
 A work in progress of a simple riced Atomic Linux distro with Niri as a window manager which can make older computers fast and snappy with its low CPU and RAM usage but also modern and beautiful.
 Based on Universal Blue and focused on niri because this window manager really deserves its own functional and themed distro out of the box.
