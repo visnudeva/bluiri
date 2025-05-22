@@ -5,22 +5,22 @@ description: A personal Linux image built atop silverblue with Niri as a window 
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 41 # latest is also supported if you want new updates ASAP
+image-version: 42 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: files 
-    files: # what is in /etc/skel/ gets copied to a newly created user’s $HOME automatically after rebooting 
-      - source: /usr/etc/skel
-      - destination: /.config
+# - type: files 
+  # files: # what is in /etc/skel/ gets copied to a newly created user’s $HOME automatically after rebooting 
+    # - source: /usr/etc/skel
+    # - destination: /.config
         
   - type: rpm-ostree
     repos: 
       # hyprland
       # - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
       # niri
-      - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-41/yalter-niri-fedora-41.repo
+      - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-42/yalter-niri-fedora-42.repo
 
     install:
       # launcher
